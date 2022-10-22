@@ -3,9 +3,9 @@
 
   border-radius: 15px;
   border: 2px solid grey;
-  -webkit-box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
-  box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: 5px 6px 6px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 5px 6px 6px -4px rgba(66, 68, 90, 1);
+  box-shadow: 5px 6px 6px -4px rgba(66, 68, 90, 1);
 }
 
 .avatar {
@@ -17,9 +17,9 @@
   border: 2px solid grey;
   background-color: rgb(228, 228, 228);
 
-  -webkit-box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
-  box-shadow: 5px 5px 6px -5px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: 5px 9px 6px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 5px 9px 6px -4px rgba(66, 68, 90, 1);
+  box-shadow: 5px 9px 6px -4px rgba(66, 68, 90, 1);
 }
 
 .description {
@@ -47,9 +47,16 @@
 }
 
 .list {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: column;
+
+  width: calc(250px / 3);
+  height: 100%;
+}
+.list:not(:last-child) {
+  border-right: 2px solid grey;
 }
 
 .name {
