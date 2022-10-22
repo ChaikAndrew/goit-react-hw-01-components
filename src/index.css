@@ -35,3 +35,30 @@ h6,
 p {
   margin: 0;
 }
+
+.header_task {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.header_task {
+  width: 27ch;
+  animation: typing 2s steps(22), blink 1s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+
+  font-family: monospace;
+  color: rgb(77, 77, 77);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  80% {
+    border-color: transparent;
+  }
+}
