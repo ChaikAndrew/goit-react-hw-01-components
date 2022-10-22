@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import defaultUser from 'components/data/user.json';
 import styles from 'components/profile/Profile.module.css';
+import { FcLike, FcBinoculars, FcCheckmark } from 'react-icons/fc';
 
 export default function Profile({
   avatar = defaultUser,
@@ -22,14 +23,18 @@ export default function Profile({
         <li className={styles.list}>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>
+          <FcCheckmark />
         </li>
         <li className={styles.list}>
           <span className="label">Views</span>
           <span className="quantity">{views}</span>
+          <FcBinoculars />
         </li>
+
         <li className={styles.list}>
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
+          <FcLike />
         </li>
       </ul>
     </div>
