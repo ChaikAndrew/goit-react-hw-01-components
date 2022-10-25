@@ -1,6 +1,9 @@
 import user from 'components/data/user.json';
+import friends from 'components/data/friends.json';
+import statistic from './data/statistic.json';
 import ProfileList from 'components/profile/ProfileList';
-
+import { FriendList } from './friendList/FriendList';
+import { Statistic } from './statistic/Statistic';
 export const App = () => {
   return (
     <div
@@ -15,6 +18,9 @@ export const App = () => {
       {' '}
       <div className="header_task">goit-react-hw-01-components</div>
       <ProfileList user={user} />
+      <Statistic title="Upload stats" stats={statistic} />
+      <Statistic stats={statistic} />
+      <FriendList friends={friends} />
     </div>
   );
 };
