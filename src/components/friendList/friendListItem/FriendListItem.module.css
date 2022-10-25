@@ -11,3 +11,17 @@
   background-color: red;
   border-radius: 50%;
 }
+
+.itemList {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 2px 15px;
+}
+.itemList:not(:last-child) {
+  border-bottom: 2px solid grey;
+}
+
+.avatar {
+  margin: 0 15px;
+}

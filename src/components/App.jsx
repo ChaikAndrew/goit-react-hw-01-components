@@ -21,7 +21,7 @@ export const App = () => {
       <div className="header_task">goit-react-hw-01-components</div>
       <ProfileList user={user} />
       <Statistic title="Upload stats" stats={statistic} />
-      <Statistic stats={statistic} />
+      {/* <Statistic stats={statistic} /> */}
       <FriendList friends={friends} />
       <Transaction transactions={transactions} />
     </div>
