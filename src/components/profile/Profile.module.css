@@ -111,7 +111,7 @@
   justify-content: center;
   flex-flow: column;
 
-  width: calc(250px / 3);
+  width: calc(100% / 3);
   height: 95%;
 }
 
